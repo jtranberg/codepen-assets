@@ -13,9 +13,7 @@
     height: 100vh;
     display: grid;
     place-items: center;
-    background: url("https://assets.codepen.io/907471/DALL%C2%B7E+2024-11-07+22.19.21+-+A+very+dark%2C+hyper-futuristic+abstract+image+with+a+central+vanishing+point+and+a+high-tech+aesthetic.+The+color+palette+is+dominated+by+deep+blacks,+.webp")
-      no-repeat center center, var(--color-surface);
-    background-size: cover;
+  
     color: var(--color-primary);
     font-family: "Helvetica Neue", monospace;
     font-weight: bold;
@@ -23,6 +21,27 @@
     margin: 0;
     perspective: 32rem;
   }
+
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 177.78vh; /* 16:9 aspect ratio */
+    height: 100vh;
+    pointer-events: none;
+}
   
   .container {
     position: relative;
