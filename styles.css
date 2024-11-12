@@ -3,7 +3,7 @@
     --brightness: 1.2;
     --rotationY: 0deg;
     --shape: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    --distance: 3vmin;
+    --distance: 5vmin;
     --color-primary: #f4e8f1;
     --color-surface: #131212;
   }
